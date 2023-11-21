@@ -1,0 +1,49 @@
+@font-face {
+    font-family: score;
+    src: url(Pacifico-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+div.background{
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+div#gameArea > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+div#gameArea > div > img{
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+div.counter{
+    text-shadow: 0 0 20px black;
+    user-select: none;
+    color: rgb(41, 201, 41);
+    font-family: score;
+    font-size: 70px;
+    position: fixed;
+    top: 10px;
+    left: 40px;
+    z-index: 5;
+}
+
+img{
+    user-select: none;
+}
